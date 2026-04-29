@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <a class="brand" href="index.html">ShoppingCart</a>
+                <nav>
+                    <ul id="enter">
+                        <li><a href="login.html">sign_in</a></li>
+                        <li><a href="register.html">sign_up</a></li>
+                    </ul>
+                    <ul id="info">
+
+                        <li><a href="profile.html" id="profilename"></a></li>
+                        <li class="shoppingcart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge"></span>
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="carts.html">View all products</a>
+                            </div>
+                        </li>
+                        <li><a href="register.html" id="logout">log_out</a></li>
+                        <li><a href="favourites.html" id="favItems">favItems</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="container">
+            <input type="text" id="search" placeholder="search by  name">
+            <div class="innercon">
+                            <div class="products">
+            </div>
+            <div class="productfilter">
+                <select name="sizefilter" id="sizefilter">
+                    <option hidden value="choose filter type">choose filter type</option>
+                    <option value="all">all</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                    <option value="x-large">x-large</option>
+                    
+
+                </select>
+            </div>
+            </div>
+        </div>
+        <a href="createProduct.html" class="create-product-icon"><i class="fa fa-plus"></i> </a>
+
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+
+
+</body>
+
+</html>

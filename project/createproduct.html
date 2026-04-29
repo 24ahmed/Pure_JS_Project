@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/createproduct.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <a class="brand" href="index.html">ShoppingCart</a>
+                <nav>
+                    <ul id="enter">
+                        <li><a href="login.html">sign_in</a></li>
+                        <li><a href="register.html">sign_up</a></li>
+                    </ul>
+                    <ul id="info">
+                        <li><a href="profile.html" id="profilename"></a></li>
+                        <!-- <li class="shoppingcart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge"></span>
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="carts.html">View all products</a>
+                            </div>
+                        </li> -->
+                        <li><a href="register.html" id="logout">log_out</a></li>
+                        <!-- <li><a href="favourites.html" id="favItems">favItems</a></li> -->
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="create-product-page">
+        <div class="containercreate">
+            <form id="createform">
+                <input type="file" id="uploadphoto">
+                <input type="text" placeholder="name of product" id="productname">
+                <input type="text" placeholder="description" id="productdescription">
+                <select name="" id="productsize" placeholder="choose size">
+                    <option value="" hidden>choose the product-size</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                    <option value="x-large">x-large</option>
+                    <option value="xx-large">xx-large</option>
+                </select>
+                <input type="submit" placeholder="Create" id="submit">
+            </form>
+        </div>
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/createproduct.js"></script>
+
+</body>
+
+</html>
